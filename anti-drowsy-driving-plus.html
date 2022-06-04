@@ -52,7 +52,7 @@
 
 <section class="editable-style section-element silex-id-1654381375622-133 page-anti-drowsy-driving-plus paged-element paged-element-visible"><div class="editable-style container-element silex-id-1654381375622-134 page-anti-drowsy-driving-plus paged-element website-width paged-element-visible" title=""><div class="editable-style text-element silex-id-1654381375622-135 page-anti-drowsy-driving-plus paged-element paged-element-visible"><div class="silex-element-content normal"><p><a href="./" title="Home" class="">FreeDev</a></p></div></div><div class="editable-style text-element silex-id-1654381375623-137 page-anti-drowsy-driving-plus paged-element paged-element-visible"><div class="silex-element-content normal"><p>For dev that what to get things done for free!</p></div></div><div class="editable-style text-element silex-id-1654382161336-162 silex-component-hamburger prevent-resizable prevent-auto-z-index"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1654382197343_14 closed">
+<div class="hamburger-menu_1654382676209_615 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -77,13 +77,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1654382197343_14').classList.remove('open');
-    document.querySelector('.hamburger-menu_1654382197343_14').classList.add('closed');
+    document.querySelector('.hamburger-menu_1654382676209_615').classList.remove('open');
+    document.querySelector('.hamburger-menu_1654382676209_615').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1654382197343_14').classList.add('open');
-    document.querySelector('.hamburger-menu_1654382197343_14').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1654382676209_615').classList.add('open');
+    document.querySelector('.hamburger-menu_1654382676209_615').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -93,7 +93,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1654382197343_14').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1654382676209_615').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -101,10 +101,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1654382197343_14 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1654382676209_615 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1654382197343_14 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1654382676209_615 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -113,8 +113,8 @@
 </script>
 </div></div></div></section><section class="editable-style section-element silex-id-1654381782357-155 page-anti-drowsy-driving-plus paged-element paged-element-visible"><div class="editable-style container-element silex-id-1654381782366-156 silex-element-content website-width prevent-draggable"><div class="editable-style text-element silex-id-1654381725872-154 page-anti-drowsy-driving-plus paged-element paged-element-visible"><div class="silex-element-content normal"><h2>Anti-Drowsy Driving Plus (ADD+): A Desktop App (Drowsiness Detection and Virtual Friend Speech-Robot for Safe Driving)</h2><h2>
 
-</h2></div></div></div></section><section class="editable-style section-element silex-id-1654381795077-157 page-anti-drowsy-driving-plus paged-element paged-element-visible"><div class="editable-style container-element silex-id-1654381795077-158 silex-element-content website-width prevent-draggable"></div></section><div class="editable-style text-element silex-id-1654381797103-159 page-anti-drowsy-driving-plus paged-element paged-element-visible"><div class="silex-element-content normal"><p>
+</h2></div></div></div></section><section class="editable-style section-element silex-id-1654381795077-157 page-anti-drowsy-driving-plus paged-element paged-element-visible"><div class="editable-style container-element silex-id-1654381795077-158 silex-element-content website-width prevent-draggable"><div class="editable-style text-element silex-id-1654381797103-159 page-anti-drowsy-driving-plus paged-element paged-element-visible"><div class="silex-element-content normal"><p>
 
 </p><p>My app is called Anti-Drowsy Driving Plus (ADD+) App. All the details about my app are on my website (<a href="https://anti-drowsy-driving-plus.herokuapp.com/" target="_blank">https://anti-drowsy-driving-plus.herokuapp.com/</a>&nbsp;) under different tabs.</p><p>My app detects users or drivers drowsiness by continuously monitoring his/her eyes and mouth in real-time, and sounds an alarm right away when it detects drivers drowsinesseither when the driver is shutting his eyes and/or yawning. Moreover, when the driver is drowsy, my Virtual Friend Speech-Robotthat I invented using text-to-speech and speech-to-textsuggests the driver to take a break, and also gives an option to the driver if the driver wants to interact, in order to stay awake. Only if the driver says yes, my Virtual Friend Speech-Robot ask 10 very-short, fun, True/False question-answers and jokes randomly from a long list of 500 question-answers and jokes that I compiled, and also tell the user if they answered right or wrong, and again ask the user if they want more question-answers and jokes. But, instead of saying yes, if the user says no or doesn't say anything, or say something else, my app goes back to drowsiness detection. Its all in a loop and continues until the user exits the app by pressing e.</p><p>Drowsy driving is one of the biggest reasons for road accidents and is pretty much equivalent to driving drunk, and my app can solve this serious global issue. According to WHO, road accidents kill 1.35 million people and injure 50 million every year, and its the leading cause of death in children and adults aged 5 to 29 years. Data shows that most of the road accidents occur on quiet rural roads and highways, and when the driver is alone in the vehicle. Being alone and not hearing any noises for a long time can make you feel drowsy, and dramatically increase the risk of an accident. So, my app with drowsiness detection and my Virtual Friend Speech-Robot invention will SAVE LIVES by preventing drivers from falling asleep at the wheel.</p>
 
-<br><p></p></div></div></body></html>
+<br><p></p></div></div></div></section></body></html>

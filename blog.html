@@ -52,7 +52,7 @@
 
 <section class="editable-style section-element silex-id-1654380790344-101 page-blog paged-element paged-element-visible"><div class="editable-style container-element silex-id-1654380790344-102 page-blog paged-element website-width paged-element-visible" title=""><div class="editable-style text-element silex-id-1654380790344-103 page-blog paged-element paged-element-visible"><div class="silex-element-content normal"><p><a href="./" title="Home" class="">FreeDev</a></p></div></div><div class="editable-style text-element silex-id-1654380790344-105 page-blog paged-element paged-element-visible"><div class="silex-element-content normal"><p>For dev that what to get things done for free!</p></div></div><div class="editable-style text-element silex-id-1654381177649-132 silex-component-hamburger prevent-resizable prevent-auto-z-index"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1654382136134_8 closed">
+<div class="hamburger-menu_1654382676205_331 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -77,13 +77,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1654382136134_8').classList.remove('open');
-    document.querySelector('.hamburger-menu_1654382136134_8').classList.add('closed');
+    document.querySelector('.hamburger-menu_1654382676205_331').classList.remove('open');
+    document.querySelector('.hamburger-menu_1654382676205_331').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1654382136134_8').classList.add('open');
-    document.querySelector('.hamburger-menu_1654382136134_8').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1654382676205_331').classList.add('open');
+    document.querySelector('.hamburger-menu_1654382676205_331').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -93,7 +93,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1654382136134_8').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1654382676205_331').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -101,10 +101,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1654382136134_8 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1654382676205_331 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1654382136134_8 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1654382676205_331 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
